@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bootstrap Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="nav navbar-header">
+<a href="home.html" class="navbar-brand">Aspiration Group</a>
+</div>
+<div>
+<ul class="nav navbar-nav">
+<li><a href="about.html">About</a></li>
+<li class="active"><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<form class="navbar-form navbar-right" role="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="search">
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</nav><br>
+<br>
+<br>
+
+
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+<div class="carousel-inner">
+<div class="item active">
+<img src="images/images1.jpg" alt="image1">
+</div>
+<div class="item">
+<img src="images/images2.jpg" alt="image2">
+</div>
+<div class="item">
+<img src="images/images3.jpg" alt="image3">
+</div>
+
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div>
+
+</div><br>
+<br>
+
+<div class="container">
+<div class="row">
+<div class="col-lg-10">
+<h1>Contact Us</h1>
+The controls are basically anchor tags with a class .carousel-control in each of them. Additionally, we need to add a class .left to the left anchor tag and a class .right to the right anchor tag. Each of the anchor tag should have their href attribute targeted to their parent element's ID which is #myCarousel in this case. You should also add a custom attribute named data-slide to specify which slide to load next. This attributes accepts a string value, i.e.: prev and next
+
+</div>
+
+<div class="col-lg-2">
+<p>Menu Bar</p>
+<ul class = "nav nav-stacked nav-pills">
+   <li><a href = "home.html">Home</a></li>
+      <li><a href = "about.html">About</a></li>
+   <li class="active"><a href = "contact.html">Contact</a></li>
+
+</ul>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
